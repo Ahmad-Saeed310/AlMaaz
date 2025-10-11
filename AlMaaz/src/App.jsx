@@ -3,7 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
+
 import Nav from './nav.jsx'
+import button from './components/button.jsx'
+import Button from './components/button.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +15,8 @@ function App() {
   return (
     <>
       <Nav />
+      <Button />
+      <Button variant="light" className="ml-4 bg-black" text="Contact Us" onClick={() => alert('Contact Us clicked!')} />
     </>
   )
 }
