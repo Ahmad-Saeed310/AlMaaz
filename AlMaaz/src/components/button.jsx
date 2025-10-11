@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap'
 
 function Button({ 
   text = "GET IN TOUCH", 
@@ -19,6 +20,7 @@ function Button({
 
   const currentVariant = variants[variant]
 
+ 
   return (
     <button 
       onClick={onClick}
