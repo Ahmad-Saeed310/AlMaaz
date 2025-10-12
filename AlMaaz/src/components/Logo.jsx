@@ -8,7 +8,11 @@ gsap.registerPlugin(SplitText);
 
 function Logo() {
   return (
-    <div className='text-[10vh] text-black font-[Inter] font-semibold'>AL MAAZ </div>
+    <div>
+
+      <div className='text-[10vh] text-white font-[Inter] font-semibold leading-none'>AL MAAZ <span className='text-base ml-[-10px]'>Architect&Engineer</span> </div>
+      
+    </div>
   )
 }
 

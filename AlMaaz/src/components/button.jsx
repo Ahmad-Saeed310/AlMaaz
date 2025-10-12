@@ -9,12 +9,12 @@ function Button({
 }) {
   const variants = {
     dark: {
-      base: "bg-black text-white  hover:bg-white",
-      hoverText: "text-black"
+      base: "bg-black text-white  hover:bg-black px-4 py-2 font-semibold",
+      hoverText: "text-white"
     },
     light: {
-      base: "text-white  ",
-      hoverText: "text-white"
+      base: "text-white border-none px-1 py-1 ",
+      hoverText: "text-white px-1 py-1 "
     }
   }
 
@@ -25,8 +25,8 @@ function Button({
     <button 
       onClick={onClick}
       className={`
-        relative rounded-full cursor-pointer border
-        px-6 py-2.5 w-fit
+        relative rounded-full cursor-pointer font-[Inter]
+         w-fit
         flex items-center justify-center
         overflow-hidden group 
         transition-all duration-300
