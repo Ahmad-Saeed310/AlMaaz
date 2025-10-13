@@ -4,7 +4,7 @@ import Nav from './nav'
 function Firstpage() {
   return (
     <>
-    <div className='w-full h-screen bg-blue-200'>
+    <div className='w-full h-screen bg-blue-200 bg-[url("https://cdn.cosmos.so/f1107e50-466e-4d32-ad99-90d1685ed386?format=jpeg")] bg-cover bg-contain bg-center relative'>
 <Nav />
 
     <div id="text" className='flex justify-between w-full px-4 font-semibold text-base font-[Inter] text-white absolute top-1/2  transform -translate-y-1/2'>

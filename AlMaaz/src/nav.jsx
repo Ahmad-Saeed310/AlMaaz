@@ -8,10 +8,10 @@ function Nav() {
     
    <Logo />
    <div className='flex items-center'>
-   <   Button variant='light' className='text-black text-sm font-bold ' text='STUDIO,'   />
-   <   Button variant='light' className='text-black text-sm font-bold' text='WORKS,'  />
-   <   Button variant='light' className='text-black text-sm font-Inter font-bold' text='PROCESS,'  />
-   <   Button variant='light' className='text-black text-sm font-bold' text='ABOUT'  />
+   <   Button variant='light' circle='none' className='text-black text-sm font-bold ' text='STUDIO,'   />
+   <   Button variant='light' circle='none' className='text-black text-sm font-bold' text='WORKS,'  />
+   <   Button variant='light' circle='none' className='text-black text-sm font-Inter font-bold' text='PROCESS,'  />
+   <   Button variant='light' circle='none' className='text-black text-sm font-bold' text='ABOUT'  />
 </div>
 <Button  className='text-base' text='GET IN TOUCH' />
    </div>
