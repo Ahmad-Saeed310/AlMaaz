@@ -7,8 +7,8 @@ import Button from "./components/button";
 function Secondpage() {
   return (
     <>
-      <div className="h-[200vh] w-full">
-        <Heading />
+      <div className="h-[150vh] w-full">
+        <Heading text="Second Page" children="This is the second page." />
         <div className="w-full flex  items-center justify-center ">
           <Img
             variant="required"

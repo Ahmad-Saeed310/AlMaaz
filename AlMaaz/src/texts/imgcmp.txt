@@ -1,0 +1,53 @@
+import React from "react";
+
+const variant = {
+  img1: "w-full h-[70vh] object-cover",
+};
+const textVariant = {
+  text1: "text-2xl font-semibold mt-4",
+};
+
+function Imgcmp({
+  src,
+  alt,
+  className = "",
+  variant = "img1",
+  text,
+  text2,
+  text3,
+  textclass = "text-base font-[Inter] mt-2",
+  link,
+}) {
+  const variantclass = variant["img1"] || "";
+  const combinedclass = `${variantclass}`;
+
+  const [hovered, setHovered] = useState(false);
+  const displayedText3 = hovered ? "View Project" : text3;
+  return (
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div id="image" className="flex flex-col  px-4">
+        <img src={src} alt={alt} className={combinedclass} />
+        <div id="text1" className="flex justify-between">
+          <div id="texts" className="flex gap-8">
+            {text && <p className={textclass}>{text}</p>}
+            {text2 && <p className={textclass}>{text2}</p>}
+          </div>
+          {displayedText3 && (
+            <p
+              className={`${textClass} transition-all duration-300 ${
+                hovered ? "text-blue-500 underline" : ""
+              }`}
+            >
+              {displayedText3}
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Imgcmp;
